@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "new-express-project/index.js"
+      "dest": "new-express-project/api/index.js"
     },
     {
       "src": "/(.*)",
