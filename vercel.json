@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "new-express-project/api/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "my-app/src/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "new-express-project/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "my-app/src/index.js"
+    }
+  ]
+}
