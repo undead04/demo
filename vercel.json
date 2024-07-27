@@ -4,10 +4,6 @@
     {
       "src": "new-express-project/api/index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "my-app/build/index.html",
-      "use": "@vercel/static"
     }
     
   ],
@@ -15,10 +11,6 @@
     {
       "src": "/api/(.*)",
       "dest": "new-express-project/api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/my-app/build/index.html"
-    }    
+    }  
   ]
 }
