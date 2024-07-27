@@ -6,9 +6,10 @@
       "use": "@vercel/node"
     },
     {
-      "src": "my-app/src/package.json",
+      "src": "my-app/build/index.html",
       "use": "@vercel/static"
     }
+    
   ],
   "routes": [
     {
@@ -17,7 +18,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "my-app/src/index.js"
-    }
+      "dest": "/my-app/build/index.html"
+    }    
   ]
 }
